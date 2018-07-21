@@ -1,0 +1,255 @@
+@import 'variables';
+@import 'mixins';
+
+body {
+  background-color: $white;
+  color: $black;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0 0 25px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+
+  margin: 0 0 25px;
+  @media(min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 35px;
+  }
+}
+
+a {
+  color: $primary;
+  transition: .2s ease-in-out;
+
+  &:focus,
+  &:hover {
+    color: darken($primary, 20%);
+    text-decoration: none;
+  }
+}
+
+#mainNav {
+  background-color: $white;
+  border-bottom: 1px solid fade-out($white, .7);
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;  margin-bottom: 0;
+  text-transform: uppercase;
+
+  .navbar-toggler {
+    border: 1px solid $black;
+    color: $black;
+    font-size: 14px;
+    padding: 11px;
+  }
+
+  .navbar-brand {
+    font-weight: 700;
+  }
+
+  a {
+    color: $black;
+  }
+
+  .navbar-nav {
+    .nav-item {
+      transition: background .3s ease-in-out;
+
+      &:hover {
+        background-color: transparent;
+        color: fade($white, 80%);
+        outline: 0;
+      }
+
+      &:active,
+      &:focus {
+        background-color: transparent;
+        outline: none;
+      }
+    }
+  }
+  @media(min-width: 992px) {
+    border-bottom: 0;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    transition: background .3s ease-in-out, padding-top .3s ease-in-out, padding-bottom .3s;
+
+    .nav-link.active {
+      background-color: rgba($white, .3);
+      outline: none;
+
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+}
+
+.masthead {
+  background: url('../img/intro-bg.jpg') no-repeat bottom center scroll;
+  background-color: $black;
+  background-size: cover;
+  color: $white;
+  display: table;
+  height: auto;
+  padding: 200px 0;
+  text-align: center;
+  width: 100%;
+
+  .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+
+    .brand-heading {
+      font-size: 50px;
+    }
+
+    .intro-text {
+      font-size: 18px;
+    }
+  }
+  @media(min-width: 768px) {
+    height: 100%;
+    padding: 0;
+
+    .intro-body {
+      .brand-heading {
+        font-size: 100px;
+      }
+
+      .intro-text {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+.btn-circle {
+  background: transparent;
+  border: 2px solid $white;
+  border-radius: 100% !important;
+  color: $white;
+  font-size: 26px;
+  height: 55px;
+  line-height: 45px;
+  margin-top: 15px;
+  transition: background .3s ease-in-out;
+  width: 55px;
+
+  &:focus,
+  &:hover {
+    background: fade-out($white, .9);
+    color: $white;
+    outline: 0;
+  }
+}
+
+.content-section {
+  padding-bottom: 150px;
+  padding-top: 150px;
+}
+
+.download-section {
+  background: url('../img/downloads-bg.jpg') no-repeat center center scroll;
+  background-color: $black;
+  background-size: cover;
+  color: $white;
+}
+
+#map {
+  height: 300px;
+  width: 100%;
+}
+@media(min-width: 992px) {
+  .content-section {
+    padding-bottom: 200px;
+    padding-top: 200px;
+  }
+
+  #map {
+    height: 350px;
+  }
+}
+
+.btn {
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: .3s ease-in-out;
+}
+
+.btn-default {
+  background-color: transparent;
+  border: 1px solid $primary;
+  color: $primary;
+
+  &:focus,
+  &:hover {
+    background-color: $primary;
+    border: 1px solid $primary;
+    color: $white;
+    outline: none;
+  }
+}
+
+ul {
+  .banner-social-buttons {
+    margin-top: 0;
+    @media(max-width: 1199px) {
+      margin-top: 15px;
+    }
+    @media(max-width: 767px) {
+      li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  padding: 50px 0;
+
+  p {
+    font-size: 14px;
+
+    margin: 0;
+  }
+}
+
+::selection {
+  background: #fcfcfc;
+  background: fade-out($white, .8);
+  text-shadow: none;
+}
+
+img::selection {
+  background: transparent;
+}

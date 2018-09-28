@@ -1,6 +1,6 @@
 body {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #fff;
+  color: #000;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   height: 100%;
   position: relative;
@@ -50,7 +50,7 @@ a:focus, a:hover {
 }
 
 #mainNav {
-  background-color: #ffffff;
+  background-color: #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin-bottom: 0;
@@ -58,8 +58,8 @@ a:focus, a:hover {
 }
 
 #mainNav .navbar-toggler {
-  border: 1px solid #000000;
-  color: #000000;
+  border: 1px solid #000;
+  color: #000;
   font-size: 14px;
   padding: 11px;
 }
@@ -69,7 +69,7 @@ a:focus, a:hover {
 }
 
 #mainNav a {
-  color: #000000;
+  color: #000;
 }
 
 #mainNav .navbar-nav .nav-item {
@@ -78,7 +78,7 @@ a:focus, a:hover {
 
 #mainNav .navbar-nav .nav-item:hover {
   background-color: transparent;
-  color: fade(#ffffff, 80%);
+  color: fade(#fff, 80%);
   outline: 0;
 }
 
@@ -100,15 +100,15 @@ a:focus, a:hover {
     outline: none;
   }
   #mainNav .nav-link.active:hover {
-    color: #000000;
+    color: #000;
   }
 }
 
 .masthead {
-  background: url("../img/intro-bg.jpg") no-repeat bottom center scroll;
-  background-color: #000000;
+  background: url("../img/intro-bg.jpg") no-repeat top center scroll;
+  background-color: #000;
   background-size: cover;
-  color: #ffffff;
+  color: #fff;
   display: table;
   height: auto;
   padding: 200px 0;
@@ -144,9 +144,9 @@ a:focus, a:hover {
 
 .btn-circle {
   background: transparent;
-  border: 2px solid #ffffff;
+  border: 2px solid #fff;
   border-radius: 100% !important;
-  color: #ffffff;
+  color: #fff;
   font-size: 26px;
   height: 55px;
   line-height: 45px;
@@ -157,7 +157,7 @@ a:focus, a:hover {
 
 .btn-circle:focus, .btn-circle:hover {
   background: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
+  color: #fff;
   outline: 0;
 }
 
@@ -168,9 +168,9 @@ a:focus, a:hover {
 
 .download-section {
   background: url("../img/downloads-bg.jpg") no-repeat center center scroll;
-  background-color: #000000;
+  background-color: #000;
   background-size: cover;
-  color: #ffffff;
+  color: #fff;
 }
 
 #map {
@@ -204,7 +204,7 @@ a:focus, a:hover {
 .btn-default:focus, .btn-default:hover {
   background-color: #42DCA3;
   border: 1px solid #42DCA3;
-  color: #ffffff;
+  color: #fff;
   outline: none;
 }
 
@@ -230,7 +230,9 @@ ul .banner-social-buttons {
 }
 
 footer {
-  padding: 50px 0;
+  background: #42DCA3;
+  color: #fff;
+  padding: 30px 0;
 }
 
 footer p {
@@ -246,4 +248,13 @@ footer p {
 
 img::selection {
   background: transparent;
+}
+
+.slick-slider {
+  margin-bottom: 30px;
+}
+
+.slick-slider img {
+  height: 480px;
+  margin: 5px;
 }

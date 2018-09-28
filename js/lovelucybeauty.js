@@ -26,6 +26,16 @@
     offset: 54
   });
 
+  $('.slider').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    centerMode: true,
+    variableWidth: true,
+    draggable: true
+  });
+
   // // Collapse Navbar
   // var navbarCollapse = function() {
   //   if ($("#mainNav").offset().top > 100) {

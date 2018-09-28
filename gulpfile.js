@@ -46,6 +46,10 @@ gulp.task('vendor', function() {
     './node_modules/jquery.easing/*.js'
   ]).pipe(gulp.dest('./vendor/jquery-easing'))
 
+  gulp.src([
+    './node_modules/slick-carousel/slick/**/*'
+  ]).pipe(gulp.dest('./vendor/slick-carousel'))
+
 });
 
 // Compile SCSS

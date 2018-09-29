@@ -7,15 +7,6 @@ var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
 var browserSync = require('browser-sync').create();
 
-// Set the banner content
-var banner = ['/*!\n',
-  ' * Start Bootstrap - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
-  ' * Copyright 2013-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
-  ' * Licensed under <%= pkg.license %> (https://github.com/BlackrockDigital/<%= pkg.name %>/blob/master/LICENSE)\n',
-  ' */\n',
-  ''
-].join('');
-
 // Copy third party libraries from /node_modules into /vendor
 gulp.task('vendor', function() {
 
@@ -71,7 +62,7 @@ gulp.task('css:minify', ['css:compile'], function() {
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(gulp.dest('./css'))
+    .pipe(gulp.dest('./dist/css'))
     .pipe(browserSync.stream());
 });
 
@@ -88,7 +79,7 @@ gulp.task('js:minify', function() {
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(gulp.dest('./js'))
+    .pipe(gulp.dest('./dist/js'))
     .pipe(browserSync.stream());
 });
 
@@ -102,7 +93,7 @@ gulp.task('default', ['css', 'js', 'vendor']);
 gulp.task('browserSync', function() {
   browserSync.init({
     server: {
-      baseDir: "./"
+      baseDir: "./dist/"
     }
   });
 });
@@ -111,5 +102,5 @@ gulp.task('browserSync', function() {
 gulp.task('dev', ['css', 'js', 'browserSync'], function() {
   gulp.watch('./scss/*.scss', ['css']);
   gulp.watch('./js/*.js', ['js']);
-  gulp.watch('./*.html', browserSync.reload);
+  gulp.watch('./dist/*.html', browserSync.reload);
 });

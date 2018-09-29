@@ -167,8 +167,8 @@ a {
 }
 
 .content-section {
-  padding-bottom: 150px;
-  padding-top: 150px;
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 
 .download-section {
@@ -184,8 +184,8 @@ a {
 }
 @media(min-width: 992px) {
   .content-section {
-    padding-bottom: 200px;
-    padding-top: 200px;
+    padding-bottom: 25px;
+    padding-top: 25px;
   }
 
   #map {
@@ -257,7 +257,11 @@ img::selection {
 }
 
 .slick-slider {
-  margin-bottom: 30px;
+
+  &.slick-dotted {
+    margin-bottom: 70px;
+  }
+
   img {
     height: 480px;
     margin: 5px;

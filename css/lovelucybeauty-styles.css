@@ -162,8 +162,8 @@ a:focus, a:hover {
 }
 
 .content-section {
-  padding-bottom: 150px;
-  padding-top: 150px;
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 
 .download-section {
@@ -180,8 +180,8 @@ a:focus, a:hover {
 
 @media (min-width: 992px) {
   .content-section {
-    padding-bottom: 200px;
-    padding-top: 200px;
+    padding-bottom: 25px;
+    padding-top: 25px;
   }
   #map {
     height: 350px;
@@ -250,8 +250,8 @@ img::selection {
   background: transparent;
 }
 
-.slick-slider {
-  margin-bottom: 30px;
+.slick-slider.slick-dotted {
+  margin-bottom: 70px;
 }
 
 .slick-slider img {

@@ -30,7 +30,7 @@
         "font-awesome": "4.7.0",
         "jquery": "3.5.1",
         "jquery.easing": "^1.4.1",
-        "npm": "^6.1.0",
+        "npm": "^7.5.4",
         "slick-carousel": "^1.8.1"
     },
     "devDependencies": {

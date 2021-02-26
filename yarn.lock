@@ -2,11 +2,11 @@
 # yarn lockfile v1
 
 
-"@npmcli/arborist@^2.0.0", "@npmcli/arborist@^2.2.4":
-  version "2.2.4"
-  resolved "https://registry.yarnpkg.com/@npmcli/arborist/-/arborist-2.2.4.tgz#f2f5974b35164dedc944f3e3ee15361ebaf8d3d7"
+"@npmcli/arborist@^2.0.0", "@npmcli/arborist@^2.2.5":
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/@npmcli/arborist/-/arborist-2.2.5.tgz#e1bacf20d168a74112a9d7fab56b34cb8099161b"
   dependencies:
-    "@npmcli/installed-package-contents" "^1.0.6"
+    "@npmcli/installed-package-contents" "^1.0.7"
     "@npmcli/map-workspaces" "^1.0.2"
     "@npmcli/metavuln-calculator" "^1.1.0"
     "@npmcli/move-file" "^1.1.0"
@@ -68,7 +68,7 @@
     unique-filename "^1.1.1"
     which "^2.0.2"
 
-"@npmcli/installed-package-contents@^1.0.6":
+"@npmcli/installed-package-contents@^1.0.6", "@npmcli/installed-package-contents@^1.0.7":
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/@npmcli/installed-package-contents/-/installed-package-contents-1.0.7.tgz#ab7408c6147911b970a8abe261ce512232a3f4fa"
   dependencies:
@@ -2956,10 +2956,10 @@ npm-user-validate@^1.0.1:
   resolved "https://registry.yarnpkg.com/npm-user-validate/-/npm-user-validate-1.0.1.tgz#31428fc5475fe8416023f178c0ab47935ad8c561"
 
 npm@^7.5.6:
-  version "7.5.6"
-  resolved "https://registry.yarnpkg.com/npm/-/npm-7.5.6.tgz#b9891691d96130b61e964fe7044b18d6c238f1f3"
+  version "7.6.0"
+  resolved "https://registry.yarnpkg.com/npm/-/npm-7.6.0.tgz#c366ffc31d4d85acc72fddf9ad33799183033812"
   dependencies:
-    "@npmcli/arborist" "^2.2.4"
+    "@npmcli/arborist" "^2.2.5"
     "@npmcli/ci-detect" "^1.2.0"
     "@npmcli/config" "^1.2.9"
     "@npmcli/run-script" "^1.8.3"

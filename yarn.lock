@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@npmcli/arborist@^2.0.0", "@npmcli/arborist@^2.2.5":
-  version "2.2.5"
-  resolved "https://registry.yarnpkg.com/@npmcli/arborist/-/arborist-2.2.5.tgz#e1bacf20d168a74112a9d7fab56b34cb8099161b"
+"@npmcli/arborist@^2.0.0", "@npmcli/arborist@^2.2.6":
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/@npmcli/arborist/-/arborist-2.2.6.tgz#3cf7185953da413da92d6f05ab302d97be624687"
   dependencies:
     "@npmcli/installed-package-contents" "^1.0.7"
     "@npmcli/map-workspaces" "^1.0.2"
@@ -2956,10 +2956,10 @@ npm-user-validate@^1.0.1:
   resolved "https://registry.yarnpkg.com/npm-user-validate/-/npm-user-validate-1.0.1.tgz#31428fc5475fe8416023f178c0ab47935ad8c561"
 
 npm@^7.5.6:
-  version "7.6.0"
-  resolved "https://registry.yarnpkg.com/npm/-/npm-7.6.0.tgz#c366ffc31d4d85acc72fddf9ad33799183033812"
+  version "7.6.1"
+  resolved "https://registry.yarnpkg.com/npm/-/npm-7.6.1.tgz#6eb9569002685ee4fb8fb9c00c56146d3a8277f5"
   dependencies:
-    "@npmcli/arborist" "^2.2.5"
+    "@npmcli/arborist" "^2.2.6"
     "@npmcli/ci-detect" "^1.2.0"
     "@npmcli/config" "^1.2.9"
     "@npmcli/run-script" "^1.8.3"
